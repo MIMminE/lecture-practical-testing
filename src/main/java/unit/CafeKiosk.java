@@ -21,6 +21,15 @@ public class CafeKiosk {
         beverages.add(beverage);
     }
 
+    public void add(Beverage beverage, int count){
+        if (count <= 0)
+            throw new IllegalArgumentException("Error Count !");
+
+        for (int i = 0; i < count; i++){
+            beverages.add(beverage);
+        }
+    }
+
     public void remove(Beverage beverage) {
         beverages.remove(beverage);
     }
