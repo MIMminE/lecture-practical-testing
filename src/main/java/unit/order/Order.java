@@ -1,5 +1,6 @@
 package unit.order;
 
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import unit.beverage.Beverage;
@@ -9,6 +10,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Setter
+@Getter
 public class Order {
 
     private final LocalDateTime orderDateTime;
